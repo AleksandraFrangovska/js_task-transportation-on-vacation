@@ -12,7 +12,7 @@ function calculateRentalCost(days) {
   const basePrice = days * 40;
 
   if (days <= 0) {
-    return 'error';
+    return 0;
   }
 
   if (days > 0 && days < MIDL_TERM) {
