@@ -11,6 +11,10 @@ function calculateRentalCost(days) {
   const LONG_TERM_DISCOUNT = 50;
   const basePrice = days * 40;
 
+  if (days <= 0) {
+    return 'error';
+  }
+
   if (days > 0 && days < MIDL_TERM) {
     return basePrice;
   }
